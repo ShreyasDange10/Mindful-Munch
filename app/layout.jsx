@@ -1,11 +1,13 @@
 import '@styles/globals.css';
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 export const metadata = {
   title: "Mindful Munch",
   description: ""
 }
 
-const RootLayout = () => {
+const RootLayout = ( {children} ) => {
   return (
     <html lang = "en">
       <body>
@@ -14,6 +16,7 @@ const RootLayout = () => {
         </div>
 
         <main className='app'>
+          <Nav/>
           {children}
         </main>
       </body>
