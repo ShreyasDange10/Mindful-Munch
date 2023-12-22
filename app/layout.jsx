@@ -3,14 +3,15 @@ import Nav from '@components/Nav';
 import Provider from '@components/Provider';
 
 export const metadata = {
-  title: "Mindful Munch",
-  description: ""
+  title: "Promptopia",
+  description: "Promptopia is an open-source AI prompting tool for modern world to discover, create and share creative prompts."
 }
 
 const RootLayout = ( {children} ) => {
   return (
     <html lang = "en">
       <body>
+      <Provider>  
         <div className='main'>
           <div className='gradient' />
         </div>
@@ -19,6 +20,7 @@ const RootLayout = ( {children} ) => {
           <Nav/>
           {children}
         </main>
+      </Provider>  
       </body>
     </html>
   )
