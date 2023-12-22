@@ -2,7 +2,9 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>page</div>
+    <section className='w-full flex-center flex-col'>
+      Home
+    </section>
   )
 }
 
