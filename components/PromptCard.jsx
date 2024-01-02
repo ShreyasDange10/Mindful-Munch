@@ -7,13 +7,13 @@ import { usePathname, useRouter } from 'next/navigation';
 
 const PromptCard = (post, handleTagClick, handleEdit, handleDelete) => {
 
-  console.log("text", post)
+  // console.log("text", post.post.creator)
   return (
     <div className="prompt_card">
       <div className="flex just-between items-start gap-5`">
         <div className="flex-1 flex justify-start items-center gap-3 cursor-pointer">
           <Image
-            src={post?.creator?.image}
+            src={post?.post?.creator?.image}
             alt = "user_image"
             width={40}
             height={40}
@@ -22,10 +22,10 @@ const PromptCard = (post, handleTagClick, handleEdit, handleDelete) => {
 
           <div className="flex flex-col">
             <h3 className="font-satoshi font-semibold text-gray-900">
-              {post?.creator?.username}
+              {post?.post?.creator?.username}
             </h3>
             <p className="font-inter text-sm text-gray-500">
-              {post?.creator?.email}
+              {post?.post?.creator?.email}
             </p>
           </div>
         </div>
